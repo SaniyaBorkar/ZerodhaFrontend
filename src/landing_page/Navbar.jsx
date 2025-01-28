@@ -42,7 +42,7 @@ const Navbar = () => {
                 </li>
                 <li className="nav-item">
                 <a
-                    href="https://zerodha-dashboard-9t4gk5n9a-saniyas-projects-8de141ba.vercel.app" // Full URL to Dashboard
+                    href="zerodha-dashboard-ten.vercel.app" // Full URL to Dashboard
                     className="nav-link active"
                   >
                     Dashboard

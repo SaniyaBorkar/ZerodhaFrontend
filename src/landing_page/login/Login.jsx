@@ -4,7 +4,7 @@ import axios from "axios";
 import { ToastContainer, toast } from "react-toastify";
 
 const Login = () => {
-
+  console.log(`${import.meta.env.VITE_API}/login`);
   const navigate = useNavigate();
   const [inputValue, setInputValue] = useState({
     email: "",
@@ -32,7 +32,8 @@ const Login = () => {
     e.preventDefault();
     try {
       const { data } = await axios.post(
-        `${import.meta.env.api}/login`,
+        `${import.meta.env.VITE_API}/login`,
+        
         {
           ...inputValue,
         },

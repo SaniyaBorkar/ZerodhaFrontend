@@ -62,7 +62,7 @@ export const AuthProvider = ({ children }) => {
         setIsAuthenticated(false);
       }
       const { data } = await axios.post(
-        "http://localhost:3002",
+        `${import.meta.env.VITE_API}`,
         {},
         { withCredentials: true }
       );

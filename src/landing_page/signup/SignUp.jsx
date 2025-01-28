@@ -35,7 +35,7 @@ const Signup = () => {
     e.preventDefault();
     try {
       const { data } = await axios.post(
-        `${import.meta.env.api}/signup`,
+        `${import.meta.env.VITE_API}/signup`,
         {
           ...inputValue,
         },
